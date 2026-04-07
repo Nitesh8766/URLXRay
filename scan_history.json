@@ -1,0 +1,98 @@
+[
+  {
+    "url": "http://paypal-login-secure.xyz",
+    "score": 70,
+    "verdict": "LIKELY PHISHING",
+    "time": "2026-04-07 19:00",
+    "findings": [
+      "[FAIL] HTTPS secure connection -> Uses HTTP (unencrypted). Phishing sites often skip HTTPS.",
+      "[PASS] Uses domain name not a raw IP",
+      "[PASS] URL length under 100 characters",
+      "[PASS] No @ symbol in URL",
+      "[FAIL] Trusted top-level domain -> TLD \".xyz\" is heavily used in phishing campaigns.",
+      "[PASS] Normal subdomain depth (max 2)",
+      "[PASS] Minimal hyphens in domain (max 2)",
+      "[PASS] Not a URL shortener",
+      "[FAIL] No suspicious keywords in URL -> Found keywords: login, secure, paypal",
+      "[FAIL] No brand name impersonation -> \"paypal\" in domain but not the official site.",
+      "[PASS] No double slashes in path",
+      "[PASS] Minimal URL encoding (not obfuscated)",
+      "[PASS] No IDN homograph attack (lookalike letters)",
+      "[PASS] No suspicious redirect parameters in query",
+      "[PASS] Not a data URI scheme",
+      "[FAIL] Domain resolves to a real server -> Domain does not resolve. May be fake or already taken down."
+    ]
+  },
+  {
+    "url": "https://secure-login-update-account-verification-paypal-support-alert.com/user/login/update/verify/account/security/check",
+    "score": 80,
+    "verdict": "LIKELY PHISHING",
+    "time": "2026-04-07 19:04",
+    "findings": [
+      "[PASS] HTTPS secure connection",
+      "[PASS] Uses domain name not a raw IP",
+      "[FAIL] URL length under 100 characters -> URL is 121 chars long. Long URLs hide malicious paths.",
+      "[PASS] No @ symbol in URL",
+      "[PASS] Trusted top-level domain",
+      "[PASS] Normal subdomain depth (max 2)",
+      "[FAIL] Minimal hyphens in domain (max 2) -> 7 hyphens found. Fake domains like paypal-secure-login.com are common.",
+      "[FAIL] Not a URL shortener -> Shorteners hide the real destination URL.",
+      "[FAIL] No suspicious keywords in URL -> Found keywords: login, verify, verification, secure, account, update, paypal, support, alert",
+      "[FAIL] No brand name impersonation -> \"paypal\" in domain but not the official site.",
+      "[PASS] No double slashes in path",
+      "[PASS] Minimal URL encoding (not obfuscated)",
+      "[PASS] No IDN homograph attack (lookalike letters)",
+      "[PASS] No suspicious redirect parameters in query",
+      "[PASS] Not a data URI scheme",
+      "[FAIL] Domain resolves to a real server -> Domain does not resolve. May be fake or already taken down."
+    ]
+  },
+  {
+    "url": "https://example.com/login?redirect=http://malicious-site.xyz",
+    "score": 30,
+    "verdict": "LIKELY SAFE",
+    "time": "2026-04-07 19:05",
+    "findings": [
+      "[PASS] HTTPS secure connection",
+      "[PASS] Uses domain name not a raw IP",
+      "[PASS] URL length under 100 characters",
+      "[PASS] No @ symbol in URL",
+      "[PASS] Trusted top-level domain",
+      "[PASS] Normal subdomain depth (max 2)",
+      "[PASS] Minimal hyphens in domain (max 2)",
+      "[PASS] Not a URL shortener",
+      "[FAIL] No suspicious keywords in URL -> Found keywords: login",
+      "[PASS] No brand name impersonation",
+      "[PASS] No double slashes in path",
+      "[PASS] Minimal URL encoding (not obfuscated)",
+      "[PASS] No IDN homograph attack (lookalike letters)",
+      "[FAIL] No suspicious redirect parameters in query -> Parameter \"redirect\" found. Used for open redirect attacks.",
+      "[PASS] Not a data URI scheme",
+      "[PASS] Domain resolves to a real server"
+    ]
+  },
+  {
+    "url": "http://scan http://192.168.1.10/verify/paypal/login",
+    "score": 40,
+    "verdict": "SUSPICIOUS",
+    "time": "2026-04-07 19:08",
+    "findings": [
+      "[FAIL] HTTPS secure connection -> Uses HTTP only. Phishing sites often skip encryption.",
+      "[PASS] Domain name used (not raw IP)",
+      "[PASS] URL length under 100 characters",
+      "[PASS] No @ symbol in URL",
+      "[PASS] Trusted top-level domain (TLD)",
+      "[PASS] Normal subdomain depth (max 2)",
+      "[PASS] Minimal hyphens in domain (max 2)",
+      "[PASS] Not a URL shortener service",
+      "[FAIL] No phishing keywords in URL -> Keywords found: login, verify, paypal",
+      "[PASS] No brand name impersonation",
+      "[FAIL] No double slashes in path -> Double slashes in path can trigger malicious redirects.",
+      "[PASS] Minimal URL encoding (no obfuscation)",
+      "[PASS] No IDN homograph attack",
+      "[PASS] No open redirect parameters",
+      "[PASS] Not a data URI scheme",
+      "[FAIL] Domain resolves to a real server -> Domain does not resolve. May be fake or already removed."
+    ]
+  }
+]

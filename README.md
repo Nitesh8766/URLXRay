@@ -1,4 +1,4 @@
-🔎 URLXRay
+🔎 URLXRayy
 
 <p align="center">"Python" (https://img.shields.io/badge/Python-3.x-blue?logo=python)
 "Security Tool" (https://img.shields.io/badge/Tool-CyberSecurity-red)

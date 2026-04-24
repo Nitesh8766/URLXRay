@@ -24,13 +24,27 @@ A lightweight cybersecurity tool that analyzes URLs and detects potential phishi
 
 🚀 Features
 
-✔ Detect suspicious keywords
-✔ Identify phishing patterns
-✔ Detect open redirects
-✔ Check HTTPS security
-✔ Domain structure analysis
-✔ Generate risk score
-
+🚀 Features
+✔ Detect suspicious keywords in URLs
+✔ Identify phishing patterns and brand impersonation
+✔ Detect open redirect parameters
+✔ Check HTTPS security status
+✔ Domain structure analysis (subdomains, TLD, encoding tricks)
+✔ DNS resolution validation
+✔ SSL/TLS connectivity check
+✔ Hosting platform detection (Render, Vercel, Netlify, etc.)
+✔ Multi-stage security scanning (Basic → Security → Intelligence)
+✔ Real-time CLI scan animation
+✔ Risk-based reputation scoring system (0–100)
+✔ Site classification engine:
+--Phishing / Malicious
+--Dev / Hosted Applications
+--Pentest / Security Lab
+--Legit / Unknown Trust
+✔ Scan history storage (JSON-based persistence)
+✔ Export scan reports to text files
+✔ Colorful CLI interface with structured UI output
+✔ Redirect analysis and login form detection
 ---
 
 📥 Installation

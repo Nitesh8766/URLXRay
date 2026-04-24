@@ -24,7 +24,6 @@ A lightweight cybersecurity tool that analyzes URLs and detects potential phishi
 
 🚀 Features
 
-🚀 Features
 ✔ Detect suspicious keywords in URLs
 ✔ Identify phishing patterns and brand impersonation
 ✔ Detect open redirect parameters
